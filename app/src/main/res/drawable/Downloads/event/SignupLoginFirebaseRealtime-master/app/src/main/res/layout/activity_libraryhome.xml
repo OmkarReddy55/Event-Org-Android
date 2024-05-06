@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Top section with Library Access name and Notification Bell icon -->
+    <RelativeLayout
+        android:id="@+id/topSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="16dp">
+
+        <TextView
+            android:id="@+id/libraryAccessName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Library Access"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/notificationBell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_notification_bell"
+            android:layout_toEndOf="@id/libraryAccessName"
+            android:layout_marginStart="170dp"/>
+    </RelativeLayout>
+
+    <!-- Horizontal scrolling posters -->
+
+    <!-- Vertical scrolling boxes -->
+
+    <HorizontalScrollView
+        android:id="@+id/posterScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/topSection"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="-5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="-7dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/horizontalImageContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <!-- Image 1 -->
+
+            <!-- Image 2 -->
+
+            <!-- Image 3 -->
+            <ImageView
+                android:layout_width="400dp"
+                android:layout_height="200dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/img_2" />
+
+            <ImageView
+                android:layout_width="400dp"
+                android:layout_height="200dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/img_3" />
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/release"
+                android:layout_marginEnd="16dp" />
+
+            <!-- Add more images as needed -->
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <!-- Bottom section with square boxes for home, search, more, favorite, and profile -->
+    <ScrollView
+        android:id="@+id/boxScrollView"
+
+        android:layout_width="401dp"
+        android:layout_height="326dp"
+        android:layout_below="@id/posterScrollView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1">
+
+        <GridLayout
+            android:id="@+id/boxContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:rowCount="3">
+
+            <!-- Photo 1 -->
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:src="@drawable/cprogramming"/>
+
+            <!-- Photo 2 -->
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:src="@drawable/python" />
+
+            <!-- Photo 3 -->
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:src="@drawable/java" />
+
+            <!-- Photo 4 -->
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:src="@drawable/java" />
+
+            <!-- Photo 5 -->
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:src="@drawable/cprogramming" />
+
+            <!-- Photo 6 -->
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:src="@drawable/python" />
+
+            <!-- Photo 7 -->
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:src="@drawable/cprogramming" />
+
+            <!-- Photo 8 -->
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:src="@drawable/java" />
+
+            <!-- Photo 9 -->
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:src="@drawable/cprogramming" />
+
+            <!-- Continue with additional photos as needed -->
+
+        </GridLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottomSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_home"
+            android:background="?android:selectableItemBackground"
+            android:contentDescription="ic_home"/>
+
+        <ImageButton
+            android:id="@+id/searchButton"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_search"
+            android:background="?android:selectableItemBackground"
+            android:contentDescription="Search"/>
+
+        <ImageButton
+            android:id="@+id/moreButton"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_more"
+            android:background="?android:selectableItemBackground"
+            android:contentDescription="More Options"/>
+
+        <ImageButton
+            android:id="@+id/favoriteButton"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_favorite"
+            android:background="?android:selectableItemBackground"
+            android:contentDescription="Favorite"/>
+
+        <ImageButton
+            android:id="@+id/profileButton"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_profile"
+            android:background="?android:selectableItemBackground"
+            android:contentDescription="Profile"/>
+    </LinearLayout>
+
+</RelativeLayout>

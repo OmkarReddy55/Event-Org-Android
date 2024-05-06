@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingConstraints">
+    <item
+        android:id="@+id/action_home"
+        android:title="Home"
+        android:icon="@drawable/ic_home" />
+
+
+    <item
+        android:id="@+id/action_addorganizers"
+        android:title="AddOrganizer"
+        android:icon="@drawable/add" />
+
+
+
+    <item
+        android:id="@+id/logout"
+        android:title="logout"
+        />
+</menu>

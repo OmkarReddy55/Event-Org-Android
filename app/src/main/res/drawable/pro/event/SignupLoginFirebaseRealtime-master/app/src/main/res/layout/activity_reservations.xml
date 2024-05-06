@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="reservations">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="156dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="4dp"
+        android:text="Reservations"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.405"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/reserveBookButton"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="48dp"
+        android:text="Reserve Book"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/holdBorrowButton"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="25dp"
+        android:text="Hold / Borrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventsButton" />
+
+    <Button
+        android:id="@+id/feedbackButton"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="25dp"
+        android:text="Feedback"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/holdBorrowButton" />
+
+    <Button
+        android:id="@+id/dueDateButton"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="25dp"
+        android:text="Due Date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeSlotButton" />
+
+    <Button
+        android:id="@+id/supportButton"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="25dp"
+        android:text="Support"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feedbackButton" />
+
+    <Button
+        android:id="@+id/eventsButton"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="25dp"
+        android:text="Events"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dueDateButton" />
+
+    <Button
+        android:id="@+id/timeSlotButton"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="25dp"
+        android:text="Time Slot"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reserveBookButton" />
+
+    <!-- Navigation buttons -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_default="spread"
+        app:menu="@menu/navigation_items"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

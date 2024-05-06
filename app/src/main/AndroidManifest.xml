@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <queries>
+
+        <!-- List of apps which you want to support for Intent pay -->
+        <package android:name="com.google.android.apps.nbu.paisa.user" />
+        <package android:name="com.phonepe.app" />
+        <!--
+             Specific intents you query for,
+             eg: for a custom share UI
+        -->
+        <intent>
+            <action android:name="android.intent.action.SEND" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/log"
+        android:label="Event-Org"
+        android:roundIcon="@mipmap/log"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SignupLoginRealtime"
+        tools:targetApi="31">
+        <activity
+            android:name=".pro_details"
+            android:exported="false" />
+        <activity
+            android:name=".add_organizer"
+            android:exported="false" />
+        <activity
+            android:name=".admin_home"
+            android:exported="false" />
+        <activity
+            android:name=".dance_upload"
+            android:exported="false" />
+        <activity
+            android:name=".org_home"
+            android:exported="false" />
+        <activity
+            android:name=".cartdetails"
+            android:exported="false" />
+        <activity
+            android:name=".cart"
+            android:exported="false" />
+        <activity
+            android:name=".hip_organizers"
+            android:exported="false" />
+        <activity
+            android:name=".wedding_details"
+            android:exported="false" />
+        <activity
+            android:name=".wedding_organizers"
+            android:exported="false" />
+        <activity
+            android:name=".dance"
+            android:exported="false" />
+        <activity
+            android:name=".weddingupload"
+            android:exported="false" />
+        <activity
+            android:name=".sub1"
+            android:exported="false" />
+        <activity
+            android:name=".organizerlogin"
+            android:exported="false" />
+        <activity
+            android:name=".usertype"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".adminlogin"
+            android:exported="false" />
+        <activity
+            android:name=".userHome"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".SignupActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <receiver
+            android:name="com.razorpay.RzpTokenReceiver"
+            android:exported="false"
+            tools:replace="android:exported">
+            <intent-filter>
+                <action android:name="rzp.device_token.share" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.razorpay.CheckoutActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/CheckoutTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <data
+                    android:host="rzp.io"
+                    android:scheme="io.rzp" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="your_key_here" />
+
+    </application>
+
+</manifest>
+
+
+

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "139476019188",
+    "project_id": "eventorg-7221a",
+    "storage_bucket": "eventorg-7221a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:139476019188:android:89952d80fa515fc0b0bba1",
+        "android_client_info": {
+          "package_name": "com.example.signuploginrealtime"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBvmhR3KdThw0lsZV2QF6aZEyGpyL8_GQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".payment">
+
+    <!-- EditText for entering the amount -->
+    <EditText
+        android:id="@+id/idEdtAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Amount to be paid"
+        android:inputType="numberDecimal" />
+
+    <!-- EditText for entering UPI ID -->
+    <EditText
+        android:id="@+id/idEdtUpi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idEdtAmount"
+        android:hint="Enter your UPI Id"
+        android:inputType="text" />
+
+    <!-- EditText for entering recipient's name -->
+    <EditText
+        android:id="@+id/idEdtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idEdtUpi"
+        android:hint="Enter recipient's name"
+        android:inputType="text" />
+
+    <!-- Add other UI elements as needed -->
+
+</RelativeLayout>
